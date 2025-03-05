@@ -4,23 +4,49 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
 
     <title>Vite App</title>
-   
   </head>
   <body>
     <header class="container mx-auto flex justify-between items-center">
-     <div class="w-[50%]">
-      <img src="./src/assets/A.svg" alt="logo" class="w-1/5 ">
-     </div>
-     <div >
-     <div class="border-2 py-1 px-5 rounded-2xl">
-       <input type="search" name="" id="" class="border-none outline-0">
-       <i class="fa-solid fa-magnifying-glass"></i>
-     </div>
-     </div>
+      <div class="w-[50%]">
+        <img src="./src/assets/A.svg" alt="logo" class="w-1/5" />
+      </div>
+      <div>
+        <div class="border-2 py-1 px-5 rounded-2xl hidden md:block">
+          <input type="search" name="" id="" class="border-none outline-0" />
+          <i class="fa-solid fa-magnifying-glass "></i>
+        </div>
+      </div>
     </header>
+    <section class="container mx-auto">
+      <div class="text-center mt-6 ">
+       
+        <div class="flex space-x-4 justify-center items-center gap-5 flex-col md:flex-row">
+          <div class="w-[50%]">
+            <h1>Auto React</h1>
+            <p>
+              Apprenez à votre rythme, créez sans limites. Découvrez une
+              plateforme pensée pour les esprits curieux et autonomes.
+           
+              Ici, l'autodidaxie devient une aventure exaltante, où chaque
+              ressource, chaque outil et chaque défi vous rapproche de
+              l'expertise.
+          
+              Rejoignez une communauté passionnée et prenez le contrôle de votre
+              apprentissage dès aujourd’hui. 🚀
+            </p>
+          </div>
+          <div class="w-[50%]">
+            <img src="./src/assets/Flux_Dev_A_charismatic_young_black_man_with_a_strong_jawline_f_3.jpeg" alt="" class="rounded-2xl mt-3">
+          </div>
+        </div>
+      </div>
+    </section>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
