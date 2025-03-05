@@ -10,10 +10,18 @@
     --color-amber-200: oklch(0.924 0.12 95.746);
     --color-amber-300: oklch(0.879 0.169 91.605);
     --color-amber-800: oklch(0.473 0.137 46.201);
+    --color-blue-300: oklch(0.809 0.105 251.813);
     --color-gray-200: oklch(0.928 0.006 264.531);
+    --color-gray-600: oklch(0.446 0.03 256.802);
     --spacing: 0.25rem;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --font-weight-light: 300;
+    --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-sm: 0.25rem;
     --radius-2xl: 1rem;
@@ -310,6 +318,9 @@
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
   .resize {
     resize: both;
   }
@@ -400,6 +411,14 @@
   .text-center {
     text-align: center;
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
@@ -407,6 +426,20 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .font-light {
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .text-blue-300 {
+    color: var(--color-blue-300);
+  }
+  .text-gray-600 {
+    color: var(--color-gray-600);
   }
   .underline {
     text-decoration-line: underline;
