@@ -1,2 +1,4 @@
 @import "tailwindcss";
-
+@theme {
+    --color-lab:oklch(51.06% 0.2141 13.34 / 70.18%);
+}
