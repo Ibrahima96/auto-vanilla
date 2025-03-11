@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -12,7 +12,7 @@
     <title>Vite App</title>
   </head>
   <body>
-    <header class="container mx-auto flex justify-between items-center ">
+    <!-- <header class="container mx-auto flex justify-between items-center ">
       <div class="w-[50%]">
         <img src="./src/assets/A.svg" alt="logo" class="w-1/5 cursor-pointer" />
       </div>
@@ -23,7 +23,40 @@
           <i class="ri-search-line cursor-pointer"></i>
         </div>
       </div>
-    </header>
+    </header> -->
+    <div class="navbar bg-base-100 shadow-sm">
+      <div class="flex-1">
+        <a>
+          <div class="w-[50%]">
+            <img src="./src/assets/A.svg" alt="logo" class="w-1/5 cursor-pointer" />
+          </div>
+        </a>
+      </div>
+      <div class="flex gap-2">
+        <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto " />
+        <div class="dropdown dropdown-end">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+            <div class="w-10 rounded-full">
+              <img
+                alt="Tailwind CSS Navbar component"
+                src="/src/assets/lookword_man.svg" />
+            </div>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+            <li>
+              <a class="justify-between">
+                Profile
+                <span class="badge">New</span>
+              </a>
+            </li>
+            <li><a>Settings</a></li>
+            <li><a>Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <section class="container mx-auto">
       <div class="text-center mt-6">
         <div
@@ -116,6 +149,41 @@
           </p>
           <p>Aller mes jeunnes prodige a l'avenir prométeurs c'est de dépassée vos limites</p>
         </div>
+
+        </section>
+        <section class="mt-24 space-y-5">
+          <div>
+            <div tabindex="0" class="collapse collapse-plus bg-base-100 border-base-300 border">
+              <div class="collapse-title font-semibold">📌 Développement Web & Pd</div>
+              <div class="collapse-content text-sm">
+                Angular, React, JavaScript, Python, etc.
+              </div>
+            </div>
+          </div>
+          <div>
+            <div tabindex="0" class="collapse collapse-plus bg-base-100 border-base-300 border">
+              <div class="collapse-title font-semibold">📌 Design & Créativité</div>
+              <div class="collapse-content text-sm">
+                UI/UX, Graphisme, Motion Design...
+              </div>
+            </div>
+          </div>
+          <div>
+            <div tabindex="0" class="collapse collapse-plus bg-base-100 border-base-300 border">
+              <div class="collapse-title font-semibold">📌 Productivité & Mindset</div>
+              <div class="collapse-content text-sm">
+                Gestion du temps, méthodes d’apprentissage, motivation.
+              </div>
+            </div>
+          </div>
+          <div>
+            <div tabindex="0" class="collapse collapse-plus bg-base-100 border-base-300 border">
+              <div class="collapse-title font-semibold">📌 Entrepreneuriat & Innovation</div>
+              <div class="collapse-content text-sm">
+                Construire un projet, créer une startup, stratégie digitale.
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </section>
